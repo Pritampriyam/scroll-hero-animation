@@ -1,16 +1,170 @@
-# React + Vite
+# 🚗 Scroll-Driven Hero Section Animation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** *Add your deployed URL here*
 
-Currently, two official plugins are available:
+**Portfolio:** *Add your portfolio URL here*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a premium scroll-driven hero section inspired by a car animation reference website. The page creates an interactive storytelling experience where the user controls the motion of the car and UI elements through mouse wheel scrolling.
 
-## Expanding the ESLint configuration
+Instead of traditional page scrolling, the animation stays on a single screen (`100vh`) while the car moves horizontally across the road. Supporting metric cards appear progressively, a custom scrollbar shows progress, and the road fill expands with the car movement.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+* 🎯 Single-screen immersive hero section
+* 🚗 Car moves left to right based on scroll input
+* 🟩 Green progress fill grows with car movement
+* 📊 Statistic cards appear one by one at custom trigger points
+* 🎚️ Custom vertical progress scrollbar
+* ⚡ Smooth motion using GSAP + interpolation
+* 🎨 Styled with Tailwind CSS
+* ⚛️ Built with React + Vite
+* 📱 Easy to extend for responsive layouts
+
+---
+
+## 🛠️ Tech Stack
+
+* **React.js**
+* **Vite**
+* **Tailwind CSS**
+* **GSAP (GreenSock Animation Platform)**
+* **JavaScript (ES6+)**
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/
+│   ├── Hero.jsx
+│   ├── Stats.jsx
+│   └── Navbar.jsx
+│
+├── hooks/
+│   └── useAnimations.js
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙️ How It Works
+
+### 1. Scroll Input
+
+Mouse wheel movement is converted into a progress value between `0 → 1`.
+
+### 2. Smooth Interpolation
+
+The current animation state smoothly follows the target progress value for premium motion.
+
+### 3. Car Animation
+
+The car translates horizontally based on scroll progress.
+
+### 4. UI Sync
+
+The following elements update together:
+
+* Green fill width
+  n- Custom scrollbar thumb
+* Stats card reveals
+
+---
+
+## 🚀 Installation & Setup
+
+```bash
+# Clone repository
+git clone <your-repo-url>
+
+# Enter project folder
+cd scroll-hero
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 🧪 Build for Production
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🎛️ Customization Guide
+
+### Change Car Speed
+
+Edit in `src/hooks/useAnimations.js`
+
+```js
+progress += event.deltaY * 0.0005;
+```
+
+### Change Smoothness
+
+```js
+current += (progress - current) * 0.3;
+```
+
+### Change Card Trigger Timing
+
+```js
+const cardTriggers = [0.12, 0.32, 0.55, 0.78];
+```
+
+### Change Card Positions / Colors / Size
+
+Edit in:
+
+```bash
+src/components/Stats.jsx
+```
+
+---
+
+## 📸 Suggested Improvements
+
+* Responsive mobile version
+* Sound effects
+* Real wheel rotation
+* Touch swipe support
+* Multiple scenes / sections
+* Better accessibility support
+
+---
+
+## 🙌 Credits
+
+Inspired by the provided scroll animation reference for assignment purposes.
+
+---
+
+## 👤 Author
+
+**Your Name**
+
+* Portfolio: Add your portfolio URL
+* GitHub: Add your GitHub URL
+* LinkedIn: Add your LinkedIn URL
