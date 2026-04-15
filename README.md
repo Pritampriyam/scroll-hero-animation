@@ -1,9 +1,8 @@
 # 🚗 Scroll-Driven Hero Section Animation
 
-**Live Demo:** *Add your deployed URL here*
+**Live Demo:(https://scroll-hero-animation-blond.vercel.app/)
 
-**Portfolio:** *Add your portfolio URL here*
-
+**Portfolio:(https://developer-portfolio-react.vercel.app/)
 ---
 
 ## 📌 Project Overview
@@ -84,7 +83,7 @@ The following elements update together:
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone <[your-repo-url](https://github.com/Pritampriyam/scroll-hero-animation)>
 
 # Enter project folder
 cd scroll-hero
@@ -163,8 +162,8 @@ Inspired by the provided scroll animation reference for assignment purposes.
 
 ## 👤 Author
 
-**Your Name**
+**Pritam Gupta**
 
-* Portfolio: Add your portfolio URL
-* GitHub: Add your GitHub URL
-* LinkedIn: Add your LinkedIn URL
+* Portfolio: [Add your portfolio URL](https://developer-portfolio-react.vercel.app/)
+* GitHub: [Add your GitHub URL](https://github.com/Pritampriyam)
+* LinkedIn: [Add your LinkedIn URL](https://www.linkedin.com/in/pritam-kumar-89a9982b6/)
