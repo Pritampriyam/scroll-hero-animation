@@ -46,6 +46,7 @@ function Stats() {
           stat
           absolute
           top-1
+          left-[71%]
           right-32
           w-83
           h-45
@@ -97,7 +98,7 @@ function Stats() {
           stat
           absolute
           bottom-18
-          left-[75%]
+          left-[76%]
           -translate-x-1/2
           w-88
           h-45
